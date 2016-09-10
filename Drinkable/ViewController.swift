@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-import FirebaseDatabase
+import Firebase
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
@@ -19,8 +19,22 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false
     
+    var ref: FIRDatabaseReference!
+    var refHandle: UInt!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = FIRDatabase.database().reference()
+        refHandle = ref.observe(FIRDataEventType.value, with: { (snapshot) in
+            let dataDict = snapshot.value as! [String: AnyObject]
+            
+            print(dataDict)
+            
+        })
+        
+        //let userID: String!
+        
         
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
@@ -30,6 +44,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
     override func viewDidAppear(_ animated: Bool) {
         locationAuthStatus()
+        ref.child("Cities")
     }
     
     func locationAuthStatus() {

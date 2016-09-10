@@ -12,7 +12,7 @@
 		111D00AB1D84063400161A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D00A91D84063400161A57 /* Main.storyboard */; };
 		111D00AD1D84063400161A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111D00AC1D84063400161A57 /* Assets.xcassets */; };
 		111D00B01D84063400161A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D00AE1D84063400161A57 /* LaunchScreen.storyboard */; };
-		111D00B81D8434A600161A57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 111D00B71D8434A600161A57 /* GoogleService-Info.plist */; };
+		111D00C01D84A67100161A57 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D00BF1D84A67100161A57 /* DataService.swift */; };
 		B1A2D4302FA4D2C0C27D4F2F /* Pods_Drinkable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,8 @@
 		111D00AC1D84063400161A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111D00AF1D84063400161A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111D00B11D84063400161A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		111D00B71D8434A600161A57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		111D00BF1D84A67100161A57 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		11A2BD951D84AE29008BA7F2 /* Drinkable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Drinkable.entitlements; sourceTree = "<group>"; };
 		42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E5D3F401CA6C17EED9508E /* Pods-Drinkable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,15 +64,32 @@
 		111D00A41D84063400161A57 /* Drinkable */ = {
 			isa = PBXGroup;
 			children = (
+				11A2BD951D84AE29008BA7F2 /* Drinkable.entitlements */,
+				111D00BE1D84A65300161A57 /* Services */,
+				111D00BB1D84914200161A57 /* Controller */,
 				111D00A51D84063400161A57 /* AppDelegate.swift */,
-				111D00A71D84063400161A57 /* ViewController.swift */,
 				111D00A91D84063400161A57 /* Main.storyboard */,
 				111D00AC1D84063400161A57 /* Assets.xcassets */,
 				111D00AE1D84063400161A57 /* LaunchScreen.storyboard */,
 				111D00B11D84063400161A57 /* Info.plist */,
-				111D00B71D8434A600161A57 /* GoogleService-Info.plist */,
 			);
 			path = Drinkable;
+			sourceTree = "<group>";
+		};
+		111D00BB1D84914200161A57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				111D00A71D84063400161A57 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		111D00BE1D84A65300161A57 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				111D00BF1D84A67100161A57 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		7500825F2E66CA9F20FB6D79 /* Pods */ = {
@@ -128,6 +146,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = WWK47579VD;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -155,7 +178,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				111D00B01D84063400161A57 /* LaunchScreen.storyboard in Resources */,
-				111D00B81D8434A600161A57 /* GoogleService-Info.plist in Resources */,
 				111D00AD1D84063400161A57 /* Assets.xcassets in Resources */,
 				111D00AB1D84063400161A57 /* Main.storyboard in Resources */,
 			);
@@ -216,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111D00C01D84A67100161A57 /* DataService.swift in Sources */,
 				111D00A81D84063400161A57 /* ViewController.swift in Sources */,
 				111D00A61D84063400161A57 /* AppDelegate.swift in Sources */,
 			);
@@ -341,6 +364,7 @@
 			baseConfigurationReference = A5E5D3F401CA6C17EED9508E /* Pods-Drinkable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Drinkable/Drinkable.entitlements;
 				DEVELOPMENT_TEAM = WWK47579VD;
 				INFOPLIST_FILE = Drinkable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -355,9 +379,11 @@
 			baseConfigurationReference = 0EFAA700E3EC092BA5A53203 /* Pods-Drinkable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Drinkable/Drinkable.entitlements;
 				DEVELOPMENT_TEAM = WWK47579VD;
 				INFOPLIST_FILE = Drinkable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.datadivers.Drinkable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
