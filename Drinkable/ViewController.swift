@@ -12,7 +12,9 @@ import FirebaseDatabase
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var resultLbl: UILabel!
     
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false
@@ -74,34 +76,43 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let coordinate = CLLocationCoordinate2D(latitude: Lat, longitude: Long)
         
         //Span
-        let latDelta:CLLocationDegrees = 0.01
-        let longDelta:CLLocationDegrees = 0.01
+        let latDelta:CLLocationDegrees = 0.001
+        let longDelta:CLLocationDegrees = 0.001
         let theSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
         
         let theRegion = MKCoordinateRegion(center: coordinate, span: theSpan)
         
-        if compareRegion(location: coordinate, inRegion: theRegion) && clean == 1 {
+        if compareRegion(region: theRegion, coordinate: coordinate) && clean == 1 {
             print("PAV: The water is clean")
-        } else if compareRegion(location: coordinate, inRegion: theRegion) && clean == 0 {
+            self.resultLbl.text = "Water is drinkable!"
+        } else if compareRegion(region: theRegion, coordinate: coordinate) && clean == 0 {
             print("PAV: The water is NOT clean")
+            self.resultLbl.text = "Water is NOT drinkable!"
         } else {
             print("PAV: no info for water")
+            self.resultLbl.text = "No info for drinkable water!"
         }
     }
     
-    func compareRegion(location: CLLocationCoordinate2D, inRegion region: MKCoordinateRegion) -> Bool {
+    func compareRegion(region : MKCoordinateRegion, coordinate : CLLocationCoordinate2D) -> Bool {
         
-        let center = region.center
-        let span = region.span
-        var result = true
-        
-        result = cos((center.latitude - location.latitude) * M_PI / 180.0) > cos(span.latitudeDelta / 2.0 * M_PI / 180.0)
-        result = cos((center.longitude - location.longitude) * M_PI / 180.0) > cos(span.longitudeDelta / 2.0 * M_PI / 180.0)
-        
-        print("PAV: We got results")
-        return result
-
+        let center   = region.center;
+        let northWestCorner = CLLocationCoordinate2D(latitude: center.latitude  - (region.span.latitudeDelta  / 2.0), longitude: center.longitude - (region.span.longitudeDelta / 2.0))
+        let southEastCorner = CLLocationCoordinate2D(latitude: center.latitude  + (region.span.latitudeDelta  / 2.0), longitude: center.longitude + (region.span.longitudeDelta / 2.0))
+        //printing results
+        print("PAV",  coordinate.latitude  >= northWestCorner.latitude &&
+            coordinate.latitude  <= southEastCorner.latitude &&
+            
+            coordinate.longitude >= northWestCorner.longitude &&
+            coordinate.longitude <= southEastCorner.longitude
+        )
+        return (
+            coordinate.latitude  >= northWestCorner.latitude &&
+                coordinate.latitude  <= southEastCorner.latitude &&
+                
+                coordinate.longitude >= northWestCorner.longitude &&
+                coordinate.longitude <= southEastCorner.longitude
+        )
     }
-    
 }
 
