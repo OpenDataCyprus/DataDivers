@@ -12,9 +12,12 @@
 		111D00AB1D84063400161A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D00A91D84063400161A57 /* Main.storyboard */; };
 		111D00AD1D84063400161A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111D00AC1D84063400161A57 /* Assets.xcassets */; };
 		111D00B01D84063400161A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D00AE1D84063400161A57 /* LaunchScreen.storyboard */; };
+		111D00B81D8434A600161A57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 111D00B71D8434A600161A57 /* GoogleService-Info.plist */; };
+		B1A2D4302FA4D2C0C27D4F2F /* Pods_Drinkable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EFAA700E3EC092BA5A53203 /* Pods-Drinkable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable.release.xcconfig"; sourceTree = "<group>"; };
 		111D00A21D84063400161A57 /* Drinkable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drinkable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		111D00A51D84063400161A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		111D00A71D84063400161A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		111D00AC1D84063400161A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111D00AF1D84063400161A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111D00B11D84063400161A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		111D00B71D8434A600161A57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E5D3F401CA6C17EED9508E /* Pods-Drinkable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A2D4302FA4D2C0C27D4F2F /* Pods_Drinkable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				111D00A41D84063400161A57 /* Drinkable */,
 				111D00A31D84063400161A57 /* Products */,
+				7500825F2E66CA9F20FB6D79 /* Pods */,
+				8F681F1A728369EF0F62606B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				111D00AC1D84063400161A57 /* Assets.xcassets */,
 				111D00AE1D84063400161A57 /* LaunchScreen.storyboard */,
 				111D00B11D84063400161A57 /* Info.plist */,
+				111D00B71D8434A600161A57 /* GoogleService-Info.plist */,
 			);
 			path = Drinkable;
+			sourceTree = "<group>";
+		};
+		7500825F2E66CA9F20FB6D79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5D3F401CA6C17EED9508E /* Pods-Drinkable.debug.xcconfig */,
+				0EFAA700E3EC092BA5A53203 /* Pods-Drinkable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F681F1A728369EF0F62606B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 111D00B41D84063400161A57 /* Build configuration list for PBXNativeTarget "Drinkable" */;
 			buildPhases = (
+				320C8FCBCA11C8E6BE02DF45 /* [CP] Check Pods Manifest.lock */,
 				111D009E1D84063400161A57 /* Sources */,
 				111D009F1D84063400161A57 /* Frameworks */,
 				111D00A01D84063400161A57 /* Resources */,
+				4E823EEA2052A7B20142273E /* [CP] Embed Pods Frameworks */,
+				60AF6586ABDB96C4DD48505A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				111D00B01D84063400161A57 /* LaunchScreen.storyboard in Resources */,
+				111D00B81D8434A600161A57 /* GoogleService-Info.plist in Resources */,
 				111D00AD1D84063400161A57 /* Assets.xcassets in Resources */,
 				111D00AB1D84063400161A57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		320C8FCBCA11C8E6BE02DF45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E823EEA2052A7B20142273E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60AF6586ABDB96C4DD48505A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		111D009E1D84063400161A57 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		111D00B51D84063400161A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E5D3F401CA6C17EED9508E /* Pods-Drinkable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WWK47579VD;
@@ -272,6 +352,7 @@
 		};
 		111D00B61D84063400161A57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFAA700E3EC092BA5A53203 /* Pods-Drinkable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WWK47579VD;
@@ -302,6 +383,7 @@
 				111D00B61D84063400161A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
