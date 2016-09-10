@@ -21,7 +21,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="prL-Y9-iif"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dG9-gN-CF5">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The water is drinkable here!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeR-Rh-fHT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No info for drinkable water!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeR-Rh-fHT">
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" red="0.39308894230769231" green="0.39308894230769231" blue="0.39308894230769231" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -36,8 +36,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHe-SV-3bZ">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drinkable." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ek-zv-4OF">
-                                        <frame key="frameInset" minY="11" width="375" height="49"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drinkable." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ek-zv-4OF">
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                         <color key="textColor" red="0.33519631410256412" green="0.33519631410256412" blue="0.33519631410256412" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -47,8 +46,7 @@
                                 <constraints>
                                     <constraint firstItem="3ek-zv-4OF" firstAttribute="centerX" secondItem="sHe-SV-3bZ" secondAttribute="centerX" id="DA6-bg-zwG"/>
                                     <constraint firstItem="3ek-zv-4OF" firstAttribute="centerY" secondItem="sHe-SV-3bZ" secondAttribute="centerY" id="Omv-vc-gg7"/>
-                                    <constraint firstItem="3ek-zv-4OF" firstAttribute="top" secondItem="sHe-SV-3bZ" secondAttribute="top" constant="6" id="VWQ-nJ-NzE"/>
-                                    <constraint firstItem="3ek-zv-4OF" firstAttribute="height" secondItem="sHe-SV-3bZ" secondAttribute="height" id="Y7K-uR-XIA"/>
+                                    <constraint firstItem="3ek-zv-4OF" firstAttribute="top" secondItem="sHe-SV-3bZ" secondAttribute="top" constant="13" id="VWQ-nJ-NzE"/>
                                     <constraint firstAttribute="height" constant="60" id="jDQ-7I-J0K"/>
                                     <constraint firstItem="3ek-zv-4OF" firstAttribute="width" secondItem="sHe-SV-3bZ" secondAttribute="width" id="yjR-tm-pOY"/>
                                 </constraints>
