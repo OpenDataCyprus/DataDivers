@@ -12,8 +12,58 @@
 		111D00AB1D84063400161A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D00A91D84063400161A57 /* Main.storyboard */; };
 		111D00AD1D84063400161A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111D00AC1D84063400161A57 /* Assets.xcassets */; };
 		111D00B01D84063400161A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D00AE1D84063400161A57 /* LaunchScreen.storyboard */; };
+		112044391D856F4F00AC6679 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112044371D856F4F00AC6679 /* Interface.storyboard */; };
+		1120443B1D856F4F00AC6679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1120443A1D856F4F00AC6679 /* Assets.xcassets */; };
+		112044421D856F4F00AC6679 /* DrinkableWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 112044411D856F4F00AC6679 /* DrinkableWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		112044491D856F4F00AC6679 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112044481D856F4F00AC6679 /* InterfaceController.swift */; };
+		1120444B1D856F4F00AC6679 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1120444A1D856F4F00AC6679 /* ExtensionDelegate.swift */; };
+		1120444D1D856F4F00AC6679 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1120444C1D856F4F00AC6679 /* NotificationController.swift */; };
+		1120444F1D856F4F00AC6679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1120444E1D856F4F00AC6679 /* Assets.xcassets */; };
+		112044531D856F4F00AC6679 /* DrinkableWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 112044351D856F4F00AC6679 /* DrinkableWatch.app */; };
 		B1A2D4302FA4D2C0C27D4F2F /* Pods_Drinkable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		112044431D856F4F00AC6679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 111D009A1D84063400161A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112044401D856F4F00AC6679;
+			remoteInfo = "DrinkableWatch Extension";
+		};
+		112044511D856F4F00AC6679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 111D009A1D84063400161A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112044341D856F4F00AC6679;
+			remoteInfo = DrinkableWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		112044591D856F4F00AC6679 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				112044421D856F4F00AC6679 /* DrinkableWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1120445B1D856F4F00AC6679 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				112044531D856F4F00AC6679 /* DrinkableWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0EFAA700E3EC092BA5A53203 /* Pods-Drinkable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable.release.xcconfig"; sourceTree = "<group>"; };
@@ -24,6 +74,17 @@
 		111D00AC1D84063400161A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111D00AF1D84063400161A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111D00B11D84063400161A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112044351D856F4F00AC6679 /* DrinkableWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkableWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		112044381D856F4F00AC6679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1120443A1D856F4F00AC6679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1120443C1D856F4F00AC6679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112044411D856F4F00AC6679 /* DrinkableWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DrinkableWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		112044471D856F4F00AC6679 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		112044481D856F4F00AC6679 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1120444A1D856F4F00AC6679 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1120444C1D856F4F00AC6679 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1120444E1D856F4F00AC6679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		112044501D856F4F00AC6679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E5D3F401CA6C17EED9508E /* Pods-Drinkable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1120443E1D856F4F00AC6679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				111D00A41D84063400161A57 /* Drinkable */,
+				112044361D856F4F00AC6679 /* DrinkableWatch */,
+				112044451D856F4F00AC6679 /* DrinkableWatch Extension */,
 				111D00A31D84063400161A57 /* Products */,
 				7500825F2E66CA9F20FB6D79 /* Pods */,
 				8F681F1A728369EF0F62606B /* Frameworks */,
@@ -54,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				111D00A21D84063400161A57 /* Drinkable.app */,
+				112044351D856F4F00AC6679 /* DrinkableWatch.app */,
+				112044411D856F4F00AC6679 /* DrinkableWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +149,37 @@
 				111D00A71D84063400161A57 /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		112044361D856F4F00AC6679 /* DrinkableWatch */ = {
+			isa = PBXGroup;
+			children = (
+				112044371D856F4F00AC6679 /* Interface.storyboard */,
+				1120443A1D856F4F00AC6679 /* Assets.xcassets */,
+				1120443C1D856F4F00AC6679 /* Info.plist */,
+			);
+			path = DrinkableWatch;
+			sourceTree = "<group>";
+		};
+		112044451D856F4F00AC6679 /* DrinkableWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				112044481D856F4F00AC6679 /* InterfaceController.swift */,
+				1120444A1D856F4F00AC6679 /* ExtensionDelegate.swift */,
+				1120444C1D856F4F00AC6679 /* NotificationController.swift */,
+				1120444E1D856F4F00AC6679 /* Assets.xcassets */,
+				112044501D856F4F00AC6679 /* Info.plist */,
+				112044461D856F4F00AC6679 /* Supporting Files */,
+			);
+			path = "DrinkableWatch Extension";
+			sourceTree = "<group>";
+		};
+		112044461D856F4F00AC6679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				112044471D856F4F00AC6679 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7500825F2E66CA9F20FB6D79 /* Pods */ = {
@@ -109,15 +212,51 @@
 				111D00A01D84063400161A57 /* Resources */,
 				4E823EEA2052A7B20142273E /* [CP] Embed Pods Frameworks */,
 				60AF6586ABDB96C4DD48505A /* [CP] Copy Pods Resources */,
+				1120445B1D856F4F00AC6679 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				112044521D856F4F00AC6679 /* PBXTargetDependency */,
 			);
 			name = Drinkable;
 			productName = Drinkable;
 			productReference = 111D00A21D84063400161A57 /* Drinkable.app */;
 			productType = "com.apple.product-type.application";
+		};
+		112044341D856F4F00AC6679 /* DrinkableWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1120445A1D856F4F00AC6679 /* Build configuration list for PBXNativeTarget "DrinkableWatch" */;
+			buildPhases = (
+				112044331D856F4F00AC6679 /* Resources */,
+				112044591D856F4F00AC6679 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				112044441D856F4F00AC6679 /* PBXTargetDependency */,
+			);
+			name = DrinkableWatch;
+			productName = DrinkableWatch;
+			productReference = 112044351D856F4F00AC6679 /* DrinkableWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		112044401D856F4F00AC6679 /* DrinkableWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112044581D856F4F00AC6679 /* Build configuration list for PBXNativeTarget "DrinkableWatch Extension" */;
+			buildPhases = (
+				1120443D1D856F4F00AC6679 /* Sources */,
+				1120443E1D856F4F00AC6679 /* Frameworks */,
+				1120443F1D856F4F00AC6679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DrinkableWatch Extension";
+			productName = "DrinkableWatch Extension";
+			productReference = 112044411D856F4F00AC6679 /* DrinkableWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -139,6 +278,16 @@
 							};
 						};
 					};
+					112044341D856F4F00AC6679 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WWK47579VD;
+						ProvisioningStyle = Automatic;
+					};
+					112044401D856F4F00AC6679 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WWK47579VD;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 111D009D1D84063400161A57 /* Build configuration list for PBXProject "Drinkable" */;
@@ -155,6 +304,8 @@
 			projectRoot = "";
 			targets = (
 				111D00A11D84063400161A57 /* Drinkable */,
+				112044341D856F4F00AC6679 /* DrinkableWatch */,
+				112044401D856F4F00AC6679 /* DrinkableWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +318,23 @@
 				111D00B01D84063400161A57 /* LaunchScreen.storyboard in Resources */,
 				111D00AD1D84063400161A57 /* Assets.xcassets in Resources */,
 				111D00AB1D84063400161A57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112044331D856F4F00AC6679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1120443B1D856F4F00AC6679 /* Assets.xcassets in Resources */,
+				112044391D856F4F00AC6679 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1120443F1D856F4F00AC6679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1120444F1D856F4F00AC6679 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +398,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1120443D1D856F4F00AC6679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1120444D1D856F4F00AC6679 /* NotificationController.swift in Sources */,
+				1120444B1D856F4F00AC6679 /* ExtensionDelegate.swift in Sources */,
+				112044491D856F4F00AC6679 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		112044441D856F4F00AC6679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112044401D856F4F00AC6679 /* DrinkableWatch Extension */;
+			targetProxy = 112044431D856F4F00AC6679 /* PBXContainerItemProxy */;
+		};
+		112044521D856F4F00AC6679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112044341D856F4F00AC6679 /* DrinkableWatch */;
+			targetProxy = 112044511D856F4F00AC6679 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		111D00A91D84063400161A57 /* Main.storyboard */ = {
@@ -247,6 +438,14 @@
 				111D00AF1D84063400161A57 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		112044371D856F4F00AC6679 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112044381D856F4F00AC6679 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -376,6 +575,76 @@
 			};
 			name = Release;
 		};
+		112044541D856F4F00AC6679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WWK47579VD;
+				IBSC_MODULE = DrinkableWatch_Extension;
+				INFOPLIST_FILE = DrinkableWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datadivers.Drinkable.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		112044551D856F4F00AC6679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WWK47579VD;
+				IBSC_MODULE = DrinkableWatch_Extension;
+				INFOPLIST_FILE = DrinkableWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datadivers.Drinkable.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		112044561D856F4F00AC6679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = WWK47579VD;
+				INFOPLIST_FILE = "DrinkableWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datadivers.Drinkable.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		112044571D856F4F00AC6679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = WWK47579VD;
+				INFOPLIST_FILE = "DrinkableWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datadivers.Drinkable.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,6 +665,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		112044581D856F4F00AC6679 /* Build configuration list for PBXNativeTarget "DrinkableWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112044561D856F4F00AC6679 /* Debug */,
+				112044571D856F4F00AC6679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1120445A1D856F4F00AC6679 /* Build configuration list for PBXNativeTarget "DrinkableWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112044541D856F4F00AC6679 /* Debug */,
+				112044551D856F4F00AC6679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
