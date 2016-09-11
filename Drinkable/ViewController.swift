@@ -14,7 +14,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var resultLbl: UILabel!
-    
+    @IBOutlet weak var resultView: UIView!
    
     var city: [String] = ["Nicosia", "Strovolos", "Aglantzia", "AgiosDometios", "Egkomi", "Latsia", "Geri", "Tseri", "Ergates", "Anthoupoli", "Alampra", "Sia", "Mathiatis", "AgiaVarvara", "Malounta", "Klirou", "Agios Ioannis ", "Kapedes", "Marki", "Pera Oreinis", "Psimolofou", "Deftera", "Paralimni", "Derineia", "Agia Napa", "Sotira", "Frenaros", "Agios Georgios", "Augorou", "Ksilofagou", "Liopetri", "Oroklini", "Livadia", "Troulloi", "Aradippou", "Kellia", "Kalavasos", "Leukara", "Kofinou", "Vavla", "Zigi", "Naut Vasi", "K.Leukara", "Marwni", "Kornos", "Pyrga", "Peristerona", "Kakopetria", "Platres", "Agros", "Kykkos", "Agios Nikolaos", "Pedoulas"]
     
@@ -43,20 +43,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.userTrackingMode = MKUserTrackingMode.follow
  
         var distance: Double
-        
         var x = 0
         var index=0
         var  min=2500000.0
-        // Set map view delegate with controller
+        
+        // setting map view delegate with controller
         self.mapView.delegate = self
-        var thisPlace = CLLocationCoordinate2DMake(Lat1, Long1)
-//        
-//        let newYorkLocation = CLLocationCoordinate2DMake(40.730872, -74.003066)
-//        // Drop a pin
-//        let dropPin = MKPointAnnotation()
-//        dropPin.coordinate = thisPlace
-//        dropPin.title = "Here!"
-//        mapView.addAnnotation(dropPin)
         
         repeat {
         
@@ -72,16 +64,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 index=x;
                 
             }
-            
-            thisPlace = CLLocationCoordinate2DMake(Lat2, Long2)
-            
-            // Drop a pin
-//            let dropPin = MKPointAnnotation()
-//            dropPin.coordinate = thisPlace
-//            dropPin.title = "New York City"
-//            mapView.addAnnotation(dropPin)
-
-            
             x += 1
            
         } while (x < city.count)
@@ -90,16 +72,22 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         if ( drinkable[index] == 1) {
             self.resultLbl.text = "High Quality - Drinkable"
-            self.resultLbl.textColor = UIColor.green
+            self.resultView.backgroundColor = UIColor.green
+            self.resultLbl.textColor = UIColor.white
         } else if ( drinkable[index] == 2) {
-            self.resultLbl.text = "Medium Quality - Not Drinkable!"
-            self.resultLbl.textColor = UIColor.orange
+            self.resultLbl.text = "Medium Quality - The water is NOT drinkable!"
+            self.resultView.backgroundColor = UIColor.orange
+            self.resultLbl.textColor = UIColor.white
         } else if ( drinkable[index] == 0) {
             self.resultLbl.text = "Low Quality - Not Drinkable!!"
-            self.resultLbl.textColor = UIColor.red
+            self.resultView.backgroundColor = UIColor.red
+            self.resultLbl.textColor = UIColor.white
         } else {
             self.resultLbl.text = "No info for Drinkable Water nearby"
+            self.resultView.backgroundColor = UIColor.white
+            self.resultLbl.textColor = UIColor.black
         }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -120,7 +108,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
-    func centerMapOnLocation(location: CLLocation) {
+    func centerMapOnLocation(_ location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
         mapView.setRegion(coordinateRegion, animated: true)
         Lat1 = location.coordinate.latitude
@@ -131,10 +119,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         if let loc = userLocation.location {
             if !mapHasCenteredOnce {
-                centerMapOnLocation(location: loc)
+                centerMapOnLocation(loc)
                 mapHasCenteredOnce = true
             }
         }
     }
+    
 }
 

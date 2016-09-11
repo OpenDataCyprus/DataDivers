@@ -8,5 +8,6 @@ target 'Drinkable' do
   # Pods for Drinkable
   #pod 'Firebase'
   #pod 'Firebase/Database'
+  pod 'SideMenu'
   
 end

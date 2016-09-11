@@ -29,14 +29,14 @@ if ($c->isEditMode()) { ?>
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var labelIndex = 0;
 
-    function addMarker(location, map, drinkable,place) {
+    function addMarker(location, map, drinkable,place,more) {
         var color;
         if (drinkable == 1){
             color = '#00FF00';
         }
 
         if (drinkable == 2){
-            color = '#FFFF00';
+            color = '#ffb015';
         }
 
         if (drinkable == 0){
@@ -60,7 +60,7 @@ if ($c->isEditMode()) { ?>
         // Add the circle for this city to the map.
         locationCircle = new google.maps.Circle(locationOptions);
         var infoWindow = new google.maps.InfoWindow({
-            content: place
+            content: "<b>"+place+"</b><br>High:"+more
         });
 
 
@@ -92,10 +92,10 @@ if ($c->isEditMode()) { ?>
                 mapTypeControl: false
             };
             var map = new google.maps.Map(document.getElementById('googleMapCanvas<?php echo $unique_identifier?>'), mapOptions);
-            var marker = new google.maps.Marker({
-                position: latlng,
-                map: map
-            });
+            // var marker = new google.maps.Marker({
+            //     position: latlng,
+            //     map: map
+            // });
 
 
 
@@ -110,9 +110,10 @@ if ($c->isEditMode()) { ?>
                 $lat = $value['latitude']; 
                 $drinkable = $value['drinkable'];
                 $place = $value['place'];
+                $more = $value['more'];
                 ?>
                 var latlng2 = new google.maps.LatLng(<?php echo $long?>, <?php echo $lat?>);
-addMarker(latlng2,map,<?php echo $drinkable?>,"<?php echo $place?>");
+addMarker(latlng2,map,<?php echo $drinkable?>,"<?php echo $place?>","<?php echo $more?>");
 
                 
            <?php }
