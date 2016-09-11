@@ -59,7 +59,7 @@ class InterfaceController: WKInterfaceController {
         if ( drinkable[index] == 1) {
             self.watchLbl.setText("High Quality - Drinkable")
         } else if ( drinkable[index] == 2) {
-            self.watchLbl.setText("Medium Quality - Not Drinkable!")
+            self.watchLbl.setText("Medium Quality - The water is NOT drinkable!")
         } else if ( drinkable[index] == 0) {
             self.watchLbl.setText("Low Quality - Not Drinkable!!")
         } else {

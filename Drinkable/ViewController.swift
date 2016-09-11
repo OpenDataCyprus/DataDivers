@@ -14,7 +14,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var resultLbl: UILabel!
-    
+    @IBOutlet weak var resultView: UIView!
    
     var city: [String] = ["Nicosia", "Strovolos", "Aglantzia", "AgiosDometios", "Egkomi", "Latsia", "Geri", "Tseri", "Ergates", "Anthoupoli", "Alampra", "Sia", "Mathiatis", "AgiaVarvara", "Malounta", "Klirou", "Agios Ioannis ", "Kapedes", "Marki", "Pera Oreinis", "Psimolofou", "Deftera", "Paralimni", "Derineia", "Agia Napa", "Sotira", "Frenaros", "Agios Georgios", "Augorou", "Ksilofagou", "Liopetri", "Oroklini", "Livadia", "Troulloi", "Aradippou", "Kellia", "Kalavasos", "Leukara", "Kofinou", "Vavla", "Zigi", "Naut Vasi", "K.Leukara", "Marwni", "Kornos", "Pyrga", "Peristerona", "Kakopetria", "Platres", "Agros", "Kykkos", "Agios Nikolaos", "Pedoulas"]
     
@@ -72,15 +72,20 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         if ( drinkable[index] == 1) {
             self.resultLbl.text = "High Quality - Drinkable"
-            self.resultLbl.textColor = UIColor.green
+            self.resultView.backgroundColor = UIColor.green
+            self.resultLbl.textColor = UIColor.white
         } else if ( drinkable[index] == 2) {
             self.resultLbl.text = "Medium Quality - Not Drinkable!"
-            self.resultLbl.textColor = UIColor.orange
+            self.resultView.backgroundColor = UIColor.orange
+            self.resultLbl.textColor = UIColor.white
         } else if ( drinkable[index] == 0) {
             self.resultLbl.text = "Low Quality - Not Drinkable!!"
-            self.resultLbl.textColor = UIColor.red
+            self.resultView.backgroundColor = UIColor.red
+            self.resultLbl.textColor = UIColor.white
         } else {
             self.resultLbl.text = "No info for Drinkable Water nearby"
+            self.resultView.backgroundColor = UIColor.white
+            self.resultLbl.textColor = UIColor.black
         }
     }
     
