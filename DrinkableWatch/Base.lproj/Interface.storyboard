@@ -10,10 +10,14 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DrinkableWatch" customModuleProvider="target">
                     <items>
-                        <label height="149" alignment="left" text="Medium Quality - The water is NOT drinkable!" textAlignment="center" numberOfLines="5" minimumScaleFactor="0.90000000000000002" id="zVf-ng-s0R">
+                        <label height="149" alignment="center" verticalAlignment="center" text="Medium Quality - The water is NOT drinkable!" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="6" minimumScaleFactor="0.90000000000000002" id="zVf-ng-s0R">
+                            <color key="textColor" red="1" green="0.6478251581222596" blue="0.20972346675198195" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" weight="medium" pointSize="22"/>
                         </label>
                     </items>
+                    <connections>
+                        <outlet property="watchLbl" destination="zVf-ng-s0R" id="ejh-p3-IfA"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

@@ -43,20 +43,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.userTrackingMode = MKUserTrackingMode.follow
  
         var distance: Double
-        
         var x = 0
         var index=0
         var  min=2500000.0
-        // Set map view delegate with controller
+        
+        // setting map view delegate with controller
         self.mapView.delegate = self
-        var thisPlace = CLLocationCoordinate2DMake(Lat1, Long1)
-//        
-//        let newYorkLocation = CLLocationCoordinate2DMake(40.730872, -74.003066)
-//        // Drop a pin
-//        let dropPin = MKPointAnnotation()
-//        dropPin.coordinate = thisPlace
-//        dropPin.title = "Here!"
-//        mapView.addAnnotation(dropPin)
         
         repeat {
         
@@ -72,16 +64,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 index=x;
                 
             }
-            
-            thisPlace = CLLocationCoordinate2DMake(Lat2, Long2)
-            
-            // Drop a pin
-//            let dropPin = MKPointAnnotation()
-//            dropPin.coordinate = thisPlace
-//            dropPin.title = "New York City"
-//            mapView.addAnnotation(dropPin)
-
-            
             x += 1
            
         } while (x < city.count)
@@ -136,5 +118,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             }
         }
     }
+    
 }
 
