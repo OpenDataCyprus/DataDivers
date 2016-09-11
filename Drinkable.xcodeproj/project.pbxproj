@@ -20,6 +20,7 @@
 		1120444D1D856F4F00AC6679 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1120444C1D856F4F00AC6679 /* NotificationController.swift */; };
 		1120444F1D856F4F00AC6679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1120444E1D856F4F00AC6679 /* Assets.xcassets */; };
 		112044531D856F4F00AC6679 /* DrinkableWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 112044351D856F4F00AC6679 /* DrinkableWatch.app */; };
+		1120445D1D85A2D400AC6679 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1120445C1D85A2D400AC6679 /* MenuVC.swift */; };
 		B1A2D4302FA4D2C0C27D4F2F /* Pods_Drinkable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		1120444C1D856F4F00AC6679 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		1120444E1D856F4F00AC6679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		112044501D856F4F00AC6679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1120445C1D85A2D400AC6679 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		42F0501F094F492FC3BC6A6E /* Pods_Drinkable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E5D3F401CA6C17EED9508E /* Pods-Drinkable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkable/Pods-Drinkable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1120443E1D856F4F00AC6679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3292A27863BE6D3BD899E21E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -147,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				111D00A71D84063400161A57 /* ViewController.swift */,
+				1120445C1D85A2D400AC6679 /* MenuVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -230,6 +240,7 @@
 			buildPhases = (
 				112044331D856F4F00AC6679 /* Resources */,
 				112044591D856F4F00AC6679 /* Embed App Extensions */,
+				3292A27863BE6D3BD899E21E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +282,7 @@
 					111D00A11D84063400161A57 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = WWK47579VD;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -281,11 +293,13 @@
 					112044341D856F4F00AC6679 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = WWK47579VD;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					112044401D856F4F00AC6679 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = WWK47579VD;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -395,6 +409,7 @@
 			files = (
 				111D00A81D84063400161A57 /* ViewController.swift in Sources */,
 				111D00A61D84063400161A57 /* AppDelegate.swift in Sources */,
+				1120445D1D85A2D400AC6679 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +688,7 @@
 				112044571D856F4F00AC6679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1120445A1D856F4F00AC6679 /* Build configuration list for PBXNativeTarget "DrinkableWatch" */ = {
 			isa = XCConfigurationList;
@@ -681,6 +697,7 @@
 				112044551D856F4F00AC6679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

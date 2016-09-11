@@ -8,13 +8,31 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>SideMenu-SideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>DC1067EC1C9D2E2AF45E880C66C6B4DE</key>
+		<key>2FEA2E9467C10F981587FABEA74E7E1A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D146B8933E30648268FBBF33BC19C8CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8FED91200D5C9248A21A6FF4EE78D0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

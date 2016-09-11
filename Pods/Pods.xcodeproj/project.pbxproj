@@ -7,33 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EED778496CB2BEFF08985184A3F9B74 /* Pods-Drinkable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E716F860EDAEF305A25EA9FD03E2ACC9 /* Pods-Drinkable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24A1B86D25C77A01AA8A91371941AD2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		9CDC2320022A3E327C932E520B2EB2F6 /* Pods-Drinkable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B41579CF48E7FB33F4A91AB88399282F /* Pods-Drinkable-dummy.m */; };
+		0E511D54EB559B09D1D2BC0D048141C9 /* Pods-Drinkable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B41579CF48E7FB33F4A91AB88399282F /* Pods-Drinkable-dummy.m */; };
+		25229853E6BD26F4246B182240CC6F37 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8CEB9E9F53FEDDC12EAE5E320FB87D /* SideMenuManager.swift */; };
+		43784177EC6A3D41A441BE8BF8E3BA18 /* Pods-Drinkable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E716F860EDAEF305A25EA9FD03E2ACC9 /* Pods-Drinkable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46365308FDD29E2B1611D8AF55504AB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		87AB43B05D55F39846AA9926670B0A7A /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6466DE0017B4975C9156DEA57A56876 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93F77A0964CE46B466A645EB50F2EFAB /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7A549F9440F56BCD794A88234F703B /* SideMenuTransition.swift */; };
+		A01FD0377885D4D82788BE8A16291214 /* SideMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB6F9A99944C58EA345DE1EA719758E8 /* SideMenu.bundle */; };
+		A8AD32284DD202DCEF14595EB81F7982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C085F13AC069D277E884401B03401EE9 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1DC7D273C8BB15FD8914201F049EB4 /* UITableViewVibrantCell.swift */; };
+		C0CBD66A5851F1A01DB57F9E765560DA /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B870EDA8A829AF4D87DE9353A8DF0136 /* SideMenu-dummy.m */; };
+		D67D8DCC078CF5CAB5757DF4C9220FC6 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E007805FB38384F26E84A8D647AA34A /* UISideMenuNavigationController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB38A9B6EEF44B77E999AD79C413FB34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D146B8933E30648268FBBF33BC19C8CE;
+			remoteInfo = "SideMenu-SideMenu";
+		};
+		D54CEDD7B9B48F5D5E9995013D87A6E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FEA2E9467C10F981587FABEA74E7E1A;
+			remoteInfo = SideMenu;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01E6D92F875E049586E77B118D0E2CA8 /* Pods-Drinkable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Drinkable.debug.xcconfig"; sourceTree = "<group>"; };
+		06A67C2A0CD79D27F517B5B4A0E18B3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298A0833E1C47BB62D68D84862215148 /* ResourceBundle-SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SideMenu-Info.plist"; sourceTree = "<group>"; };
+		2E007805FB38384F26E84A8D647AA34A /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		2F48DCCC9DEDB4A2E971DD59FE297A0F /* Pods-Drinkable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Drinkable.release.xcconfig"; sourceTree = "<group>"; };
 		3149C4911D9CC2A40913010E79EFEF9C /* Pods-Drinkable-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Drinkable-acknowledgements.plist"; sourceTree = "<group>"; };
 		3896B6CF72F9300AD2EF71CC84E28972 /* Pods-Drinkable-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Drinkable-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4EA593EB947B4A91CCC5E36057D3A563 /* Pods-Drinkable-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Drinkable-frameworks.sh"; sourceTree = "<group>"; };
 		4FAB5D76D7E591DA16520B075B8749F6 /* Pods-Drinkable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Drinkable.modulemap"; sourceTree = "<group>"; };
-		5C764CC98EF25E40C0BC83C7A3E1C8CC /* Pods_Drinkable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8CEB9E9F53FEDDC12EAE5E320FB87D /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		671D8C5F510060A0B67F975533F2A27B /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		6E7A549F9440F56BCD794A88234F703B /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
 		75555FC6D7BD8F54D5AA824586582690 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787BB56F8D62BAD315BC40A64646EBDF /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BAD3B5140D037533D14FB16AA70114 /* Pods_Drinkable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A380FDE41B0B295B17E2FB7D90A3ADDF /* Pods-Drinkable-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Drinkable-resources.sh"; sourceTree = "<group>"; };
 		B41579CF48E7FB33F4A91AB88399282F /* Pods-Drinkable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Drinkable-dummy.m"; sourceTree = "<group>"; };
+		B870EDA8A829AF4D87DE9353A8DF0136 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		BB6F9A99944C58EA345DE1EA719758E8 /* SideMenu.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenu.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2ABF646692C54621A00CA5282B1C691 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		CC1DC7D273C8BB15FD8914201F049EB4 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E6466DE0017B4975C9156DEA57A56876 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
 		E716F860EDAEF305A25EA9FD03E2ACC9 /* Pods-Drinkable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Drinkable-umbrella.h"; sourceTree = "<group>"; };
+		F5F426E7438A6256D698444924DAB53B /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28188FBB6B3AE08001700BC14B7BA274 /* Frameworks */ = {
+		051E4BCA74A7A302BBFBB40F8C3490E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A1B86D25C77A01AA8A91371941AD2A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06287B79090B5470BC00D757E5904EA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8AD32284DD202DCEF14595EB81F7982 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DA0EA16A27D954975AC5BF258D7C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46365308FDD29E2B1611D8AF55504AB8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +119,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4637DBDCF0E6169684C6FDB70731E021 /* Products */ = {
+		448EA066CA35C8DF1EF36C9BDB8487FC /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				5C764CC98EF25E40C0BC83C7A3E1C8CC /* Pods_Drinkable.framework */,
+				5B8CEB9E9F53FEDDC12EAE5E320FB87D /* SideMenuManager.swift */,
+				6E7A549F9440F56BCD794A88234F703B /* SideMenuTransition.swift */,
+				2E007805FB38384F26E84A8D647AA34A /* UISideMenuNavigationController.swift */,
+				CC1DC7D273C8BB15FD8914201F049EB4 /* UITableViewVibrantCell.swift */,
+				EAC32B060997015E826798C59DDA2B76 /* Support Files */,
 			);
-			name = Products;
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		4C7DECB9505A3661801AB8D77F9249EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				448EA066CA35C8DF1EF36C9BDB8487FC /* SideMenu */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -79,9 +144,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4637DBDCF0E6169684C6FDB70731E021 /* Products */,
+				4C7DECB9505A3661801AB8D77F9249EF /* Pods */,
+				8CAD097EE54D8D9B9DF34242DE1F4BAD /* Products */,
 				8E68E43369D95328B3EDB7F0864EBCEC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8CAD097EE54D8D9B9DF34242DE1F4BAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92BAD3B5140D037533D14FB16AA70114 /* Pods_Drinkable.framework */,
+				BB6F9A99944C58EA345DE1EA719758E8 /* SideMenu.bundle */,
+				787BB56F8D62BAD315BC40A64646EBDF /* SideMenu.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8E68E43369D95328B3EDB7F0864EBCEC /* Targets Support Files */ = {
@@ -100,35 +176,95 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EAC32B060997015E826798C59DDA2B76 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06A67C2A0CD79D27F517B5B4A0E18B3C /* Info.plist */,
+				298A0833E1C47BB62D68D84862215148 /* ResourceBundle-SideMenu-Info.plist */,
+				671D8C5F510060A0B67F975533F2A27B /* SideMenu.modulemap */,
+				C2ABF646692C54621A00CA5282B1C691 /* SideMenu.xcconfig */,
+				B870EDA8A829AF4D87DE9353A8DF0136 /* SideMenu-dummy.m */,
+				F5F426E7438A6256D698444924DAB53B /* SideMenu-prefix.pch */,
+				E6466DE0017B4975C9156DEA57A56876 /* SideMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A468D08C7C11C8E47AF605ECF2372787 /* Headers */ = {
+		15B46B532E78E2CA3B726EAF971160BE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EED778496CB2BEFF08985184A3F9B74 /* Pods-Drinkable-umbrella.h in Headers */,
+				43784177EC6A3D41A441BE8BF8E3BA18 /* Pods-Drinkable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F358BC5D4A32AA1BA61AC28175D453 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AB43B05D55F39846AA9926670B0A7A /* SideMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DC1067EC1C9D2E2AF45E880C66C6B4DE /* Pods-Drinkable */ = {
+		2FEA2E9467C10F981587FABEA74E7E1A /* SideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABD79E1BB6D1673D1DABE6321080E357 /* Build configuration list for PBXNativeTarget "Pods-Drinkable" */;
+			buildConfigurationList = 5236C70341FDB98FE210B0F00EC95F6E /* Build configuration list for PBXNativeTarget "SideMenu" */;
 			buildPhases = (
-				3D1DF6FDDED548168C740B3762E6E80C /* Sources */,
-				28188FBB6B3AE08001700BC14B7BA274 /* Frameworks */,
-				A468D08C7C11C8E47AF605ECF2372787 /* Headers */,
+				FEB01ECF5570996ADB283F0A1976A261 /* Sources */,
+				67DA0EA16A27D954975AC5BF258D7C97 /* Frameworks */,
+				736C0B9DA669308F8C4E3DAFC141BCFE /* Resources */,
+				19F358BC5D4A32AA1BA61AC28175D453 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22241FA71083507BAE0977DB0B4AB109 /* PBXTargetDependency */,
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = 787BB56F8D62BAD315BC40A64646EBDF /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D146B8933E30648268FBBF33BC19C8CE /* SideMenu-SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EDB442AD7595878424F70C585D7CDFF /* Build configuration list for PBXNativeTarget "SideMenu-SideMenu" */;
+			buildPhases = (
+				1F83536F184510634741926F38AFC3E2 /* Sources */,
+				051E4BCA74A7A302BBFBB40F8C3490E7 /* Frameworks */,
+				F2FBBD2F5DE0BF082821F7D7A3C0F4AB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "SideMenu-SideMenu";
+			productName = "SideMenu-SideMenu";
+			productReference = BB6F9A99944C58EA345DE1EA719758E8 /* SideMenu.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E8FED91200D5C9248A21A6FF4EE78D0E /* Pods-Drinkable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43B1E96A4F18E832D2D51A8665508DA /* Build configuration list for PBXNativeTarget "Pods-Drinkable" */;
+			buildPhases = (
+				61166B82160C6CA34E07D4E6C73BD3C3 /* Sources */,
+				06287B79090B5470BC00D757E5904EA6 /* Frameworks */,
+				15B46B532E78E2CA3B726EAF971160BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CD990E5CBF6513A7678E0A0486B63F5 /* PBXTargetDependency */,
+			);
 			name = "Pods-Drinkable";
 			productName = "Pods-Drinkable";
-			productReference = 5C764CC98EF25E40C0BC83C7A3E1C8CC /* Pods_Drinkable.framework */;
+			productReference = 92BAD3B5140D037533D14FB16AA70114 /* Pods_Drinkable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -139,6 +275,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2FEA2E9467C10F981587FABEA74E7E1A = {
+						LastSwiftMigration = 0800;
+					};
+					E8FED91200D5C9248A21A6FF4EE78D0E = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -148,27 +292,112 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4637DBDCF0E6169684C6FDB70731E021 /* Products */;
+			productRefGroup = 8CAD097EE54D8D9B9DF34242DE1F4BAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC1067EC1C9D2E2AF45E880C66C6B4DE /* Pods-Drinkable */,
+				E8FED91200D5C9248A21A6FF4EE78D0E /* Pods-Drinkable */,
+				2FEA2E9467C10F981587FABEA74E7E1A /* SideMenu */,
+				D146B8933E30648268FBBF33BC19C8CE /* SideMenu-SideMenu */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		736C0B9DA669308F8C4E3DAFC141BCFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01FD0377885D4D82788BE8A16291214 /* SideMenu.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2FBBD2F5DE0BF082821F7D7A3C0F4AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3D1DF6FDDED548168C740B3762E6E80C /* Sources */ = {
+		1F83536F184510634741926F38AFC3E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CDC2320022A3E327C932E520B2EB2F6 /* Pods-Drinkable-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61166B82160C6CA34E07D4E6C73BD3C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E511D54EB559B09D1D2BC0D048141C9 /* Pods-Drinkable-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEB01ECF5570996ADB283F0A1976A261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CBD66A5851F1A01DB57F9E765560DA /* SideMenu-dummy.m in Sources */,
+				25229853E6BD26F4246B182240CC6F37 /* SideMenuManager.swift in Sources */,
+				93F77A0964CE46B466A645EB50F2EFAB /* SideMenuTransition.swift in Sources */,
+				D67D8DCC078CF5CAB5757DF4C9220FC6 /* UISideMenuNavigationController.swift in Sources */,
+				C085F13AC069D277E884401B03401EE9 /* UITableViewVibrantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		22241FA71083507BAE0977DB0B4AB109 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SideMenu-SideMenu";
+			target = D146B8933E30648268FBBF33BC19C8CE /* SideMenu-SideMenu */;
+			targetProxy = CB38A9B6EEF44B77E999AD79C413FB34 /* PBXContainerItemProxy */;
+		};
+		6CD990E5CBF6513A7678E0A0486B63F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = 2FEA2E9467C10F981587FABEA74E7E1A /* SideMenu */;
+			targetProxy = D54CEDD7B9B48F5D5E9995013D87A6E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		02F83B110DBD07E4E92CC6DD84E05863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2ABF646692C54621A00CA5282B1C691 /* SideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		034014829C1E4434983CF3A690C12017 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -211,7 +440,71 @@
 			};
 			name = Debug;
 		};
-		AB3FB8C70AE81DEB59555228D160326A /* Debug */ = {
+		34755EBFD00748F39597D42BCB128498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2ABF646692C54621A00CA5282B1C691 /* SideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		543AA2C487900999DD59E9CEDE6BC957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2ABF646692C54621A00CA5282B1C691 /* SideMenu.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SideMenu";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SideMenu/ResourceBundle-SideMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8230A1128CD6730A6F6C22D8081EC6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2ABF646692C54621A00CA5282B1C691 /* SideMenu.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SideMenu";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SideMenu/ResourceBundle-SideMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		95F42E12875F72D9F70104F2D356FA96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01E6D92F875E049586E77B118D0E2CA8 /* Pods-Drinkable.debug.xcconfig */;
 			buildSettings = {
@@ -238,11 +531,47 @@
 				PRODUCT_NAME = Pods_Drinkable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A693A73B0723B00F2A03CF0F9FEEEACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F48DCCC9DEDB4A2E971DD59FE297A0F /* Pods-Drinkable.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Drinkable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Drinkable/Pods-Drinkable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Drinkable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -282,39 +611,6 @@
 			};
 			name = Release;
 		};
-		DFB6017A25E84C9EAE32B3C2E7AD4E4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F48DCCC9DEDB4A2E971DD59FE297A0F /* Pods-Drinkable.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Drinkable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Drinkable/Pods-Drinkable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Drinkable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,11 +623,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABD79E1BB6D1673D1DABE6321080E357 /* Build configuration list for PBXNativeTarget "Pods-Drinkable" */ = {
+		5236C70341FDB98FE210B0F00EC95F6E /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB3FB8C70AE81DEB59555228D160326A /* Debug */,
-				DFB6017A25E84C9EAE32B3C2E7AD4E4A /* Release */,
+				02F83B110DBD07E4E92CC6DD84E05863 /* Debug */,
+				34755EBFD00748F39597D42BCB128498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EDB442AD7595878424F70C585D7CDFF /* Build configuration list for PBXNativeTarget "SideMenu-SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8230A1128CD6730A6F6C22D8081EC6F0 /* Debug */,
+				543AA2C487900999DD59E9CEDE6BC957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43B1E96A4F18E832D2D51A8665508DA /* Build configuration list for PBXNativeTarget "Pods-Drinkable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F42E12875F72D9F70104F2D356FA96 /* Debug */,
+				A693A73B0723B00F2A03CF0F9FEEEACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

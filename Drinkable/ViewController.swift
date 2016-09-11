@@ -75,7 +75,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             self.resultView.backgroundColor = UIColor.green
             self.resultLbl.textColor = UIColor.white
         } else if ( drinkable[index] == 2) {
-            self.resultLbl.text = "Medium Quality - Not Drinkable!"
+            self.resultLbl.text = "Medium Quality - The water is NOT drinkable!"
             self.resultView.backgroundColor = UIColor.orange
             self.resultLbl.textColor = UIColor.white
         } else if ( drinkable[index] == 0) {
@@ -87,6 +87,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             self.resultView.backgroundColor = UIColor.white
             self.resultLbl.textColor = UIColor.black
         }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -107,7 +108,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
-    func centerMapOnLocation(location: CLLocation) {
+    func centerMapOnLocation(_ location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
         mapView.setRegion(coordinateRegion, animated: true)
         Lat1 = location.coordinate.latitude
@@ -118,7 +119,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         if let loc = userLocation.location {
             if !mapHasCenteredOnce {
-                centerMapOnLocation(location: loc)
+                centerMapOnLocation(loc)
                 mapHasCenteredOnce = true
             }
         }
