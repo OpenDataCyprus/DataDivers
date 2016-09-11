@@ -30,6 +30,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var mapHasCenteredOnce = false
     
     
+    var Lat1 = 35.172471
+    var Long1 = 33.362421
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,19 +41,67 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
-        createRegion()
+ 
+        var distance: Double
         
         var x = 0
+        var index=0
+        var  min=2500000.0
+        // Set map view delegate with controller
+        self.mapView.delegate = self
+        var thisPlace = CLLocationCoordinate2DMake(Lat1, Long1)
+//        
+//        let newYorkLocation = CLLocationCoordinate2DMake(40.730872, -74.003066)
+//        // Drop a pin
+//        let dropPin = MKPointAnnotation()
+//        dropPin.coordinate = thisPlace
+//        dropPin.title = "Here!"
+//        mapView.addAnnotation(dropPin)
+        
         repeat {
+        
+            let Lat2:CLLocationDegrees = lat[x]
+            let Long2:CLLocationDegrees = long[x]
+
+            //efklidia
+            let latitude = Lat1 - Lat2
+            let longitude = Long1 - Long2
+            distance = sqrt(latitude * latitude + longitude * longitude)
+            if (distance<min){
+                min=distance
+                index=x;
+                
+            }
             
-            //CLLocationCoordinate2D(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
+            thisPlace = CLLocationCoordinate2DMake(Lat2, Long2)
             
+            // Drop a pin
+//            let dropPin = MKPointAnnotation()
+//            dropPin.coordinate = thisPlace
+//            dropPin.title = "New York City"
+//            mapView.addAnnotation(dropPin)
+
             
             x += 1
+           
         } while (x < city.count)
+       
+        print("drinkble",drinkable[index])
         
+        if ( drinkable[index] == 1) {
+            self.resultLbl.text = "High Quality - Drinkable"
+            self.resultLbl.textColor = UIColor.green
+        } else if ( drinkable[index] == 2) {
+            self.resultLbl.text = "Medium Quality - Not Drinkable!"
+            self.resultLbl.textColor = UIColor.orange
+        } else if ( drinkable[index] == 0) {
+            self.resultLbl.text = "Low Quality - Not Drinkable!!"
+            self.resultLbl.textColor = UIColor.red
+        } else {
+            self.resultLbl.text = "No info for Drinkable Water nearby"
+        }
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         locationAuthStatus()
     }
@@ -71,6 +123,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
         mapView.setRegion(coordinateRegion, animated: true)
+        Lat1 = location.coordinate.latitude
+        Long1 = location.coordinate.longitude
     }
 
 
@@ -81,60 +135,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 mapHasCenteredOnce = true
             }
         }
-    }
-    
-    
-    func createRegion(){
-        //IdeaCy coordinates: 35.171296, 33.361021
-        //water is clean
-        
-        
-        // Coordinates
-        //we will change the data from google firebase data
-        let Lat:CLLocationDegrees = 35.0
-        let Long:CLLocationDegrees = 33.0
-        let clean = 1
-        
-        let coordinate = CLLocationCoordinate2D(latitude: Lat, longitude: Long)
-        
-        //Span
-        let latDelta:CLLocationDegrees = 0.001
-        let longDelta:CLLocationDegrees = 0.001
-        let theSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
-        
-        let theRegion = MKCoordinateRegion(center: coordinate, span: theSpan)
-        
-        if compareRegion(region: theRegion, coordinate: coordinate) && clean == 1 {
-            print("PAV: The water is clean")
-            self.resultLbl.text = "Water is drinkable!"
-        } else if compareRegion(region: theRegion, coordinate: coordinate) && clean == 0 {
-            print("PAV: The water is NOT clean")
-            self.resultLbl.text = "Water is NOT drinkable!"
-        } else {
-            print("PAV: no info for water")
-            self.resultLbl.text = "No info for drinkable water!"
-        }
-    }
-    
-    func compareRegion(region : MKCoordinateRegion, coordinate : CLLocationCoordinate2D) -> Bool {
-        
-        let center   = region.center;
-        let northWestCorner = CLLocationCoordinate2D(latitude: center.latitude  - (region.span.latitudeDelta  / 2.0), longitude: center.longitude - (region.span.longitudeDelta / 2.0))
-        let southEastCorner = CLLocationCoordinate2D(latitude: center.latitude  + (region.span.latitudeDelta  / 2.0), longitude: center.longitude + (region.span.longitudeDelta / 2.0))
-        //printing results
-        print("PAV",  coordinate.latitude  >= northWestCorner.latitude &&
-            coordinate.latitude  <= southEastCorner.latitude &&
-            
-            coordinate.longitude >= northWestCorner.longitude &&
-            coordinate.longitude <= southEastCorner.longitude
-        )
-        return (
-            coordinate.latitude  >= northWestCorner.latitude &&
-                coordinate.latitude  <= southEastCorner.latitude &&
-                
-                coordinate.longitude >= northWestCorner.longitude &&
-                coordinate.longitude <= southEastCorner.longitude
-        )
     }
 }
 
