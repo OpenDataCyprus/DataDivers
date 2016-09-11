@@ -15,13 +15,31 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var resultLbl: UILabel!
     
+    struct details {
+        var drinkable: Int!
+        var long: Double!
+        var lat:Double!
+    }
+    class City {
+        var cities = details()
+    }
+    
+    let Nicosia = details(drinkable: 2, long: 35.0, lat: 34.1)
+   
+    
+    
+    
+    
+    
+    
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
