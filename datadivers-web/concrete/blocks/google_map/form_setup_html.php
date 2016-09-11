@@ -96,9 +96,9 @@ function gm_authFailure() {
             if ($('#apiKeyCheck')) {
                 $('#apiKeyCheck').remove();
             }
-            $('body').append('<script id="apiKeyCheck" src="https://maps.googleapis.com/maps/api/js?' +
+            $('body').append('<script async defer id="apiKeyCheck" src="https://maps.googleapis.com/maps/api/js?' +
                 'key=' + apiKey +
-                '&libraries=places" <\/script>'
+                '&libraries=places&callback=initAutocomplete" <\/script>'
             );
             setTimeout(function() {
                 if (validKey) {

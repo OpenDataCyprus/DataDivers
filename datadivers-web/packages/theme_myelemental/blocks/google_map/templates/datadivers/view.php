@@ -24,7 +24,7 @@ if ($c->isEditMode()) { ?>
     set these values through the controller
 */
 ?>
-
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>   
 <script type="text/javascript">
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var labelIndex = 0;
@@ -64,9 +64,15 @@ if ($c->isEditMode()) { ?>
         });
 
 
+
         google.maps.event.addListener(locationCircle, 'click', function(ev){
+            // var c=document.getElementsByClassName("gm-style-iw");
+            // c.style.color = color;
+
+
             infoWindow.setPosition(locationCircle.getCenter());
             infoWindow.open(map);
+            $(".gm-style-iw").css("color", color);
         });
 
       // Add the marker at the clicked location, and add the next-available label
@@ -96,6 +102,10 @@ if ($c->isEditMode()) { ?>
             //     position: latlng,
             //     map: map
             // });
+
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
 
 
@@ -137,3 +147,4 @@ addMarker(latlng2,map,<?php echo $drinkable?>,"<?php echo $place?>","<?php echo 
         }
     });
 </script>
+ <input id="pac-input" class="controls" type="text" placeholder="Search Box">  
