@@ -39,7 +39,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.userTrackingMode = MKUserTrackingMode.follow
         createRegion()
         
-        
+        var x = 0
+        repeat {
+            
+            //CLLocationCoordinate2D(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
+            
+            
+            x += 1
+        } while (x < city.count)
         
     }
 
